@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="author" content="Demodia">
+
+<meta name="description" content="this is the meta description.">
+
+<title>Auritas VIM Calculator</title>
+
+<link rel="stylesheet"
+	href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Custom -->
+<link rel="stylesheet" href="style/custom.css" charset="utf-8">
+
+</head>
+<body>
+
+	<div id="site-background" class="fixed-bottom fixed-top h-100 w-100">
+		<div class="img-holder">
+			<img src="media/background.png" class="img-item mid-mid">
+		</div>
+	</div>
+
+	<!-- BGN #master-holder -->
+	<main id="master-holder" class=""> <header id="site-header"
+		class="fixed-top">
+		<article>
+			<div class="container d-flex justify-content-between">
+				<article id="site-brand">
+					<div class="img-holder">
+						<a href="../../index.html"> <img src="media/auritas-logo.png" class="img-item">
+						</a>
+					</div>
+				</article>
+				<article id="site-title">
+					<header>
+						<h1 class="m-0">Auritas VIM Calculator</h1>
+					</header>
+				</article>
+				<article id="nav-spacer"></article>
+			</div>
+		</article>
+	</header> <!-- BGN CONTENT -->
+
+
+	<section class="sectioned">
+		<article id="tabbed-calculator">
+			<div class="container">
+				<div class="spaced py-3"></div>
+
+				<div id="navi-tabs-holder" class="no-action hidden-print">
+					<div id="navi-tabs">
+						<div class="tab-nav-item text-center" data-tab="tab-5">
+							<div class="mid-vert">
+								<span>Results</span>
+							</div>
+							<div class="tab-item-background">
+								<svg version="1.1" class="tab-navi-behind"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 250 90" style="enable-background: new 0 0 250 90;"
+									xml:space="preserve">
+										<polygon class="arrow-edge"
+										points="231,0 235,0 250,45 235,90 231,90 " />
+										<polygon class="arrow-path"
+										points="0,0 234,0 249,45 234,90 0,90 " />
+									</svg>
+							</div>
+
+						</div>
+						<div class="tab-nav-item text-center" data-tab="tab-4">
+							<div class="mid-vert">
+								<span>Compliance</span>
+							</div>
+							<div class="tab-item-background">
+								<svg version="1.1" class="tab-navi-behind"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 250 90" style="enable-background: new 0 0 250 90;"
+									xml:space="preserve">
+										<polygon class="arrow-edge"
+										points="231,0 235,0 250,45 235,90 231,90 " />
+										<polygon class="arrow-path"
+										points="0,0 234,0 249,45 234,90 0,90 " />
+									</svg>
+							</div>
+
+						</div>
+						<div class="tab-nav-item text-center" data-tab="tab-3">
+							<div class="mid-vert">
+								<span>Discounts &amp; Payment</span>
+							</div>
+							<div class="tab-item-background">
+								<svg version="1.1" class="tab-navi-behind"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 250 90" style="enable-background: new 0 0 250 90;"
+									xml:space="preserve">
+										<polygon class="arrow-edge"
+										points="231,0 235,0 250,45 235,90 231,90 " />
+										<polygon class="arrow-path"
+										points="0,0 234,0 249,45 234,90 0,90 " />
+									</svg>
+							</div>
+
+						</div>
+						<div class="tab-nav-item text-center" data-tab="tab-2">
+							<div class="mid-vert">
+								<span>Exception Resolution</span>
+							</div>
+							<div class="tab-item-background">
+								<svg version="1.1" class="tab-navi-behind"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 250 90" style="enable-background: new 0 0 250 90;"
+									xml:space="preserve">
+										<polygon class="arrow-edge"
+										points="231,0 235,0 250,45 235,90 231,90 " />
+										<polygon class="arrow-path"
+										points="0,0 234,0 249,45 234,90 0,90 " />
+									</svg>
+							</div>
+
+						</div>
+						<div class="tab-nav-item text-center" id="tab-nav-1"
+							data-tab="tab-1">
+							<div class="mid-vert">
+								<span>Invoice Processing</span>
+							</div>
+							<div class="tab-item-background">
+								<svg version="1.1" class="tab-navi-behind"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 250 90" style="enable-background: new 0 0 250 90;"
+									xml:space="preserve">
+										<polygon class="arrow-edge"
+										points="231,0 235,0 250,45 235,90 231,90 " />
+										<polygon class="arrow-path"
+										points="0,0 234,0 249,45 234,90 0,90 " />
+									</svg>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="spaced py-3"></div>
+
+				<div id="tab-content-holder">
+					<div id="tab-content">
+						<!-- BGN Intro Page -->
+						<div class="tab-content-item" id="tab-opening">
+							<div class="row">
+								<div class="col-lg-10 offset-lg-1">
+									<div class="mx-3">
+										<h2 class="mt-5 mb-1">Automate and Transform Invoice Processing and Enable Intelligent Operations  </h2>
+										<p class="lead mb-4">VIM Value Calculator - Auritas DATA Suite&reg; - Invoice Management</p>
+										<p>This model is designed to explore the estimated
+											business benefits for the implementation of SAP® Invoice
+											Management by OpenText, based on a few metrics typical for processing invoices. </p>
+										<p>The model is interactive and any figure may be changed
+											at any point with the resulting impact on the benefits shown
+											immediately. Where is the numeric input as requested, you can
+											enter an integer value into the box or use the slider
+											provided.</p>
+										<p>You may use the Print option within your browser at any
+											time to print the information that is displayed.</p>
+										<p>You can use the Save / Load buttons to save the values
+											that you have entered into local storage on your personal
+											computer. Once saved the data to maybe re-loaded into the
+											model. Please note that your data is only saved locally and
+											can't be transferred to another computer.</p>
+										<p>The model includes some preset data values and likely
+											improvement ranges that you can be changed by using the
+											assumptions button to open the panel containing that
+											information.</p>
+
+										<div class="spaced py-4"></div>
+
+										<!-- BGN Agree Form -->
+										<div class="m-auto text-center agree-form">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="agree-checkbox"> <label
+													class="custom-control-label" for="agree-checkbox">I
+													Agree to the <a href="index.html" data-toggle="modal"
+													data-target="#terms-of-use">Terms of Use</a>
+												</label>
+											</div>
+											<div class="spaced py-3"></div>
+											<button class="btn btn-primary text-white px-5"
+												id="agree-button">I Agree</button>
+										</div>
+										<div class="spaced py-5"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- BGN Tab Content -->
+						<div class="tab-content-item-container">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 greyed-column" id="data-column">
+									<!-- BGN Tab 1 -->
+									<div class="tab-content-item" id="tab-1">
+										<header class="mt-3 mb-3">
+											<h3 class="m-0">Invoice Processing</h3>
+										</header>
+										<table class="table table-hover table-striped custom-table">
+											<thead>
+												<tr>
+													<th class="data-col-1">Item</th>
+													<th class="data-col-2">Value</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter the yearly number of invoices from all sources that will be processed by the Invoice management solution.">&nbsp;
+															&nbsp;</div>
+														<span>Number of Invoices Processed per Year ( in thousands )</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t1-q1"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Estimate the percentage of the incoming invoices that orignate as paper, email, fax or PDF.">&nbsp;
+															&nbsp;</div>
+														<span>Paper-based Invoices (Percent of Total)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t1-q2"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Estimate the percentage of the incoming invoices that have an associated purchase order.">&nbsp;
+															&nbsp;</div>
+														<span>PO-based Invoices (Percent of Total)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t1-q3"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter a value that represents the number of FTEs associated with entering invoices.  An experienced data typist can enter 100,000 to 200,000 invoices/year.">&nbsp;
+															&nbsp;</div>
+														<span>Number of FTEs Entering Invoices</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t1-q4" data-float="true"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter a value that represents the number of Full-Time Employee (FTE) equivalents using only the work associated with processing invoices for payment excluding any time spent entering invoices (One FTE typically processes 5,000 to 20,000 invoices/year).">&nbsp;
+															&nbsp;</div>
+														<span>Number of FTEs Processing Invoices</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t1-q5" data-float="true"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<!-- BGN Tab 2 -->
+									<div class="tab-content-item" id="tab-2">
+										<header class="mt-3 mb-3">
+											<h3 class="m-0">Exception Resolution</h3>
+										</header>
+										<table class="table table-hover table-striped custom-table">
+											<thead>
+												<tr>
+													<th class="data-col-1">Item</th>
+													<th class="data-col-2">Value</th>
+												</tr>
+											</thead>
+											<tbody>
+
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+                              title="Estimate the percentage of PO-Based invoices with exceptions that require special handling.  Examples are: quantity, price or date mismatches; missing or wrong PO numbers; matching problems between PO, GR and invoices or additional costs.">&nbsp;
+															&nbsp;</div>
+														<span>Percentage of PO-based Invoices with Exceptions</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t2-q1"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+                              title="A calculated value for the number of problem PO-based invoices per month.">&nbsp;
+															&nbsp;</div>
+														<span class="readonly">Number of Problem PO-based Invoices per Month (calculated value)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t2-q2" readonly></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter the percentage of problem invoices that require review and resolution by someone in Purchasing.">&nbsp;
+															&nbsp;</div>
+														<span>Percentage of Problem PO-based Invoices Needing Purchasing Review</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t2-q3"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter the percentage of problem invoices that require review and resolution by someone in Receiving.">&nbsp;
+															&nbsp;</div>
+														<span>Percentage of Problem PO-based Invoices Needing Receiving Review</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t2-q4"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter a value that represents the average time in minutes required for resolving Purchasing exceptions such as wrong or missing PO numbers, price discrepancies or contract violations.">&nbsp;
+															&nbsp;</div>
+														<span>Average Purchasing Resolution Time (Minutes per Invoice)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t2-q5"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter a value that represents the average time in minutes required for resolving Receiving exceptions.">&nbsp;
+															&nbsp;</div>
+														<span>Average Receiving Resolution Time (Minutes per Invoice)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t2-q6"></td>
+												</tr>
+
+
+											</tbody>
+										</table>
+									</div>
+
+
+
+									<!-- BGN Tab 3 -->
+									<div class="tab-content-item" id="tab-3">
+										<header class="mt-3 mb-3">
+											<h3 class="m-0">Discounts &amp; Payment</h3>
+										</header>
+										<table class="table table-hover table-striped custom-table">
+											<thead>
+												<tr>
+													<th class="data-col-1">Item</th>
+													<th class="data-col-2">Value</th>
+												</tr>
+											</thead>
+											<tbody>
+
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Please enter the Average Non-PO Approval Time (Minutes per Invoice)">&nbsp;
+															&nbsp;</div>
+														<span>Average Non-PO Approval Time (Minutes per
+															Invoice)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t3-q1"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Estimate the total annual procurement spend in the selected currency.">&nbsp;
+															&nbsp;</div>
+														<span>Total Procurement Spend (<span class="currency"></span> in millions)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t3-q2"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Estimate the current percentage of the procurement spend that has early payment discounts already pre-negotiated agreements. If you are unable to accurately estimate this value, please ask your SAP or OpenText solution engineer to help analyze your historical vendor data.">&nbsp;
+															&nbsp;</div>
+														<span>Pre-negotiated Available Discounts (Percent of Spend)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t3-q3"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Estimate the current average early payment discount that you expect (typically 1% - 3%). If you are unable to accurately estimate this value, please ask your SAP or OpenText solution engineer to help analyze your historical data.">&nbsp;
+															&nbsp;</div>
+														<span>Average Early Payment Discount (%)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t3-q4" data-float="true"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" 
+														title="Estimate the percentage of your procurement spend that is potentially eligible for discounting (Non-Discountable spend often includes utilities, taxes & government-related spend). The % can vary, but on average 60% of spend is potentially discountable.  If you are unable to accurately estimate this value, please ask your SAP or OpentText solution engineer to help analyze your historical data.">&nbsp;
+															&nbsp;</div>
+														<span>Missed Discounts (Percent of Available)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t3-q5"></td>
+												</tr>
+
+
+											</tbody>
+										</table>
+									</div>
+
+
+
+									<!-- BGN Tab 4 -->
+									<div class="tab-content-item" id="tab-4">
+										<header class="mt-3 mb-3">
+											<h3 class="m-0">Compliance</h3>
+										</header>
+										<table class="table table-hover table-striped custom-table">
+											<thead>
+												<tr>
+													<th class="data-col-1">Item</th>
+													<th class="data-col-2">Value</th>
+												</tr>
+											</thead>
+											<tbody>
+
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="Estimate the annual cost to your organization of accounts payable fraud as a percentage of your annual procurement spend.">&nbsp;
+															&nbsp;</div>
+														<span>A/P Fraud as a Percent of Spend</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t4-q1" data-float="true"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="Calculated value for the Annual Cost of A/P Fraud in the given currency">&nbsp;
+															&nbsp;</div>
+														<span class="readonly">Annual Cost of A/P Fraud (<span class="currency"></span>) (calculated value) </span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t4-q2" readonly></td>
+												</tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right"  title="Enter a value that represents all of the reporting and auditing requests that pertain to invoices -- e.g. for accruals, audits, reporting liabilities.  Note: This does not consider the value of reducing or eliminating the risk of unaccrued liabilities that may have a material impact on the financial results.">&nbsp;
+                              &nbsp;</div>
+                            <span>Number of A/P Audit Requests Processed per Month</span>
+                          </td>
+                          <td id=""><input type="text" class="form-control" id="t4-q3"></td>
+                        </tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="Estimate the average amount of time in minutes that it takes someone in accounts payable to process an audit request.">&nbsp;
+															&nbsp;</div>
+														<span>Average Time per Request (minutes)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t4-q4"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Estimate the percentage of incoming invoices that are duplicates. Potential reasons are: Suppliers sending invoices on different channels (e-mail and paper) or to different departments.">&nbsp;
+															&nbsp;</div>
+														<span>Duplicate Invoices (Percent of Total)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t4-q5" data-float="true"></td>
+												</tr>
+
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Enter a value that represents the cost of duplicate invoices to your organization.  This cost would be associated with internal auditing and collection of duplicate payments and/or the average fee paid for external duplicate payment audit.">&nbsp;
+															&nbsp;</div>
+														<span>Annual Duplicate Payment Recovery Cost (<span class="currency"></span>)</span>
+													</td>
+													<td id=""><input type="text" class="form-control" id="t4-q6"></td>
+												</tr>
+
+
+											</tbody>
+										</table>
+									</div>
+
+									<!-- BGN Tab: Results -->
+									<div class="tab-content-item" id="tab-5">
+										<h3 class="mt-2 mb-1">Results</h3>
+									</div>
+
+									<!-- BUTTONS -->
+									<div class="button-interactions hidden-print">
+										<div
+											class="d-lg-flex align-items-center justify-content-center">
+											<div class="spaced px-2"></div>
+											<button
+												class="btn btn-primary btn-md btn-block nav-prev-button my-2">Previous</button>
+											<div class="spaced px-3"></div>
+											<button
+												class="btn btn-primary btn-md btn-block nav-next-button my-2">Next</button>
+											<div class="spaced px-2"></div>
+										</div>
+										<div class="spaced py-2"></div>
+										<div
+											class="d-lg-flex align-items-center justify-content-center">
+											<div class="spaced px-2"></div>
+											<button class="btn btn-greyed btn-md btn-block my-2"
+												id="export-data">Save &hellip;</button>
+											<div class="spaced px-3"></div>
+											<button class="btn btn-greyed btn-md btn-block my-2"
+												id="load-data-btn">Load &hellip;</button>
+											<div class="spaced px-2"></div>
+										</div>
+										<div
+											class="d-lg-flex align-items-center justify-content-center">
+											<div class="spaced px-2"></div>
+											<button
+												class="btn btn-greyed btn-md btn-block print-page my-2">Print</button>
+											<div class="spaced px-3"></div>
+											<button class="btn btn-greyed btn-md btn-block my-2"
+												id="content-input-button" data-toggle="modal"
+												data-target="#assumptions">Assumptions</button>
+											<div class="spaced px-2"></div>
+										</div>
+										<div class="spaced py-2"></div>
+										<!--<div class="master-data"><span>* - Master Data</span></div>
+											<div class="trans-data"><span>* - Transactional Data</span></div>-->
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-12 white-column" id="results-column">
+									<div class="total-savings">
+										<div class="tab-7 tab-data-table">
+											<div class="spaced py-2"></div>
+											<h2 class="mt-0 mb-2">Your Total Savings</h2>
+											<div class="text-right hidden-print">
+												<button class="btn btn-greyed btn-md print-page">&nbsp;
+													Print &nbsp;</button>
+											</div>
+										</div>
+										<div class="spaced py-2"></div>
+										<div class="row mx-0">
+											<div class="col-sm-6">
+												<div class="coloured-background greyed">
+													<span>Total Savings</span>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="coloured-background greened">
+													<span class="currency-icon currency">$</span>
+													<span class="total-savings-span">1,550,000 </span>
+												</div>
+											</div>
+										</div>
+										<div class="spaced py-2"></div>
+										<div class="row mx-0">
+											<div class="col-sm-12" style="text-align: center;">
+												<a class="btn btn-primary btn-md btn-block nav-next-button" target="_blank" href="https://www.sap.com/products/invoice-management.html">Learn more ...</a>
+											</div>
+										</div>
+										<div class="spaced py-2"></div>
+									</div>
+
+									<div class="spaced py-2"></div>
+
+									<div style="max-width: 450px; padding-left: 0px; padding-right: 0px; margin-left: auto; margin-right: auto;">
+										<canvas id="tab5-chart" class="chart-js" width="400" height="260"></canvas>
+									</div>
+
+									<div class="spaced py-2"></div>
+
+									<div class="tab-1 tab-data-table">
+										<table class="table table-hover table-striped">
+											<thead>
+												<tr>
+													<th width="56%"></th>
+													<th>Conservative</th>
+													<th>Likely</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Data Entry">&nbsp;
+															&nbsp;</div> <span>Data Entry</span>
+													</td>
+													<td class="a1-c"></td>
+													<td class="a1-l"></td>
+												</tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="A/P Processing">&nbsp;
+                              &nbsp;</div> <span>A/P Processing</span>
+                          </td>
+                          <td class="a2-c"></td>
+                          <td class="a2-l"></td>
+                        </tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>Sub-Total</th>
+													<th class="total-c"></th>
+													<th class="total-l"></th>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<div class="tab-2 tab-data-table">
+										<table class="table table-hover table-striped">
+											<thead>
+												<tr>
+													<th width="56%"></th>
+													<th>Conservative</th>
+													<th>Likely</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Your increase in purchasing exceptions">&nbsp;
+															&nbsp;</div> <span>Purchasing Exceptions</span>
+													</td>
+													<td class="a3-c"></td>
+													<td class="a3-l"></td>
+												</tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Your increase in receiving exceptions">&nbsp;
+                              &nbsp;</div> <span>Receiving Exceptions</span>
+                          </td>
+                          <td class="a4-c"></td>
+                          <td class="a4-l"></td>
+                        </tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>Sub-Total</th>
+													<th class="total-c"></th>
+													<th class="total-l"></th>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<div class="tab-3 tab-data-table">
+										<table class="table table-hover table-striped">
+											<thead>
+												<tr>
+													<th width="56%"></th>
+													<th>Conservative</th>
+													<th>Likely</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Your increase in non-PO Approvals">&nbsp;
+															&nbsp;</div> <span>Non-PO Approvals</span>
+													</td>
+													<td class="a5-c"></td>
+													<td class="a5-l"></td>
+												</tr>
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body"
+															data-toggle="tooltip" data-placement="right"
+															title="Missed Discounts">&nbsp;
+															&nbsp;</div> <span>Missed Discounts</span>
+													</td>
+													<td class="a6-c"></td>
+													<td class="a6-l"></td>
+												</tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Additional Discounts">&nbsp;
+                              &nbsp;</div> <span>Additional Discounts</span>
+                          </td>
+                          <td class="a7-c"></td>
+                          <td class="a7-l"></td>
+                        </tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>Sub-Total</th>
+													<th class="total-c"></th>
+													<th class="total-l"></th>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<div class="tab-4 tab-data-table">
+										<table class="table table-hover table-striped">
+											<thead>
+												<tr>
+													<th width="56%"></th>
+													<th>Conservative</th>
+													<th>Likely</th>
+												</tr>
+											</thead>
+											<tbody>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Duplicate Processing">&nbsp;
+                              &nbsp;</div> <span>Duplicate Processing</span>
+                          </td>
+                          <td class="a8-c"></td>
+                          <td class="a8-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Duplicate Duplicate Payments">&nbsp;
+                              &nbsp;</div> <span>Duplicate Payments</span>
+                          </td>
+                          <td class="a9-c"></td>
+                          <td class="a9-l"></td>
+                        </tr>
+												<tr>
+													<td id="">
+														<div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="A/P Fraud">&nbsp;
+															&nbsp;</div> <span>A/P Fraud</span>
+													</td>
+													<td class="a10-c"></td>
+													<td class="a10-l"></td>
+												</tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="Audit Requests">&nbsp;
+                              &nbsp;</div> <span>Audit Requests</span>
+                          </td>
+                          <td class="a11-c"></td>
+                          <td class="a11-l"></td>
+                        </tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>Sub-Total</th>
+													<th class="total-c"></th>
+													<th class="total-l"></th>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+                  <div class="tab-5 tab-data-table">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th width="56%"></th>
+                          <th>Conservative</th>
+                          <th>Likely</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Data Entry">&nbsp;
+                              &nbsp;</div> <span>Data Entry</span>
+                          </td>
+                          <td class="a1-c"></td>
+                          <td class="a1-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="A/P Processing">&nbsp;
+                              &nbsp;</div> <span>A/P Processing</span>
+                          </td>
+                          <td class="a2-c"></td>
+                          <td class="a2-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Your increase in purchasing exceptions">&nbsp;
+                              &nbsp;</div> <span>Purchasing Exceptions</span>
+                          </td>
+                          <td class="a3-c"></td>
+                          <td class="a3-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Your increase in receiving exceptions">&nbsp;
+                              &nbsp;</div> <span>Receiving Exceptions</span>
+                          </td>
+                          <td class="a4-c"></td>
+                          <td class="a4-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Your increase in non-PO Approvals">&nbsp;
+                              &nbsp;</div> <span>Non-PO Approvals</span>
+                          </td>
+                          <td class="a5-c"></td>
+                          <td class="a5-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Missed Discounts">&nbsp;
+                              &nbsp;</div> <span>Missed Discounts</span>
+                          </td>
+                          <td class="a6-c"></td>
+                          <td class="a6-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Additional Discounts">&nbsp;
+                              &nbsp;</div> <span>Additional Discounts</span>
+                          </td>
+                          <td class="a7-c"></td>
+                          <td class="a7-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Duplicate Processing">&nbsp;
+                              &nbsp;</div> <span>Duplicate Processing</span>
+                          </td>
+                          <td class="a8-c"></td>
+                          <td class="a8-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body"
+                              data-toggle="tooltip" data-placement="right"
+                              title="Duplicate Duplicate Payments">&nbsp;
+                              &nbsp;</div> <span>Duplicate Payments</span>
+                          </td>
+                          <td class="a9-c"></td>
+                          <td class="a9-l"></td>
+                        </tr>
+
+
+
+
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="A/P Fraud">&nbsp;
+                              &nbsp;</div> <span>A/P Fraud</span>
+                          </td>
+                          <td class="a10-c"></td>
+                          <td class="a10-l"></td>
+                        </tr>
+                        <tr>
+                          <td id="">
+                            <div class="pop-act" data-container="body" data-toggle="tooltip" data-placement="right" title="Audit Requests">&nbsp;
+                              &nbsp;</div> <span>Audit Requests</span>
+                          </td>
+                          <td class="a11-c"></td>
+                          <td class="a11-l"></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th>Total Savings</th>
+                          <th class="total-c"></th>
+                          <th class="total-l" id="total-savings-final"></th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="spaced py-3"></div>
+			</div>
+		</article>
+	</section>
+
+	<!-- END CONTENT --> <footer id="site-footer">
+		<article>
+			<div class="container d-flex justify-content-between">
+				<article id="footer-copy">
+					Copyright &copy; Auritas LLC. All Rights Reserved.. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				</article>
+				<article id="footer-bits">
+					<a href="#">Terms of Use</a> &nbsp; | &nbsp; 
+					<a href="https://www.auritas.com/privacy-policy/">Privacy</a>
+				</article>
+			</div>
+		</article>
+	</footer> </main>
+	<!-- END #master-holder -->
+
+	<!-- BGN Modals -->
+	<div class="modal" id="load-data" tabindex="-1" role="dialog"
+		aria-labelledby="load-data-label" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div id="close-modal" data-dismiss="modal">
+						<span>close</span>
+						<div class="close-holder">x</div>
+					</div>
+					<h2 class="mt-0 mb-2">Load Data</h2>
+					<div class="form-group center">
+						<div class="spaced py-2"></div>
+						<div class="input-group">
+							<span class="input-group-btn w-100"> <span
+								class="btn btn-primary btn-file w-100 d-flex justify-content-between align-items-center text-left">
+									<i class="fa fa-upload"></i> Import Plan…
+									<div class="custom-file ml-3">
+										<input type="file" class="custom-file-input"
+											name="import-file" id="import-file"> <label
+											class="custom-file-label" for="import-file">Choose
+											file</label>
+									</div>
+							</span>
+							</span> <input type="text" class="form-control" readonly
+								style="display: none;">
+						</div>
+						<div class="spaced py-3"></div>
+						<p class="muted">
+							Saved files will default to your download directory unless you
+							have moved them to another directory. The file name will be
+							data_migration.json unless you rename using your desktop file
+							system.<br>Opening a new file will overwrite your existing
+							work completely. If you want to open a new plan, save your
+							current file under a new name and open a new index.html file.
+						</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="assumptions" tabindex="-1" role="dialog"
+		aria-labelledby="assumptions-label" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div id="close-modal" data-dismiss="modal">
+						<span>close</span>
+						<div class="close-holder">x</div>
+					</div>
+					
+					<ul class="nav nav-tabs">
+					  <li class="nav-item">
+              <a class="nav-link active assumption-tab" id="cost-assumptions-tab" data-toggle="tab" href="index.html#cost-assumptions" role="tab" aria-controls="cost-assumptions" aria-selected="true">Cost Assumptions</a>
+					  </li>
+					  <li class="nav-item">
+              <a class="nav-link assumption-tab" id="improvement-assumptions-tab" data-toggle="tab" href="index.html#improvement-assumptions" role="tab"  aria-controls="improvement-assumptions" aria-selected="false">Improvement Assumptions</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="assumptions-content">
+					 <div class="tab-pane fade show active" id="cost-assumptions" role="tabpanel" aria-labelledby="cost-assumptions-tab">
+							<form class="m-auto">
+								<div class="form-group row">
+									<div class="col-sm-6 text-right">
+										<label class="form-check-label lead" for="assumptions-currency">Currency</label>
+									</div>
+									<div class="col-sm-6">
+										<select class="form-control assumption" id="assumptions-currency" name="assumptions-currency">
+											<option selected value="EUR">€</option>
+											<option value="GBP">£</option>
+											<option value="USD">$</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6 text-right">
+										<label class="form-check-label lead" for="assumptions-working-days">Working Days per Month</label>
+									</div>
+									<div class="col-sm-6">
+										<input type="number" step="0.1" min="1" max="" class="form-control assumption" id="assumptions-working-days" name="assumptions-working-days">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-6 text-right">
+										<label class="form-check-label lead" for="assumptions-working-minutes">Working Minutes per Day</label>
+									</div>
+									<div class="col-sm-6">
+										<input type="number" min="1" max="" class="form-control assumption" id="assumptions-working-minutes" name="assumptions-working-minutes">
+									</div>
+								</div>
+							</form>
+		
+							<span class="h4 my-5 d-block">Average Fully-Loaded Cost per Full-Time Equivalent (FTE) Below:</span>
+		
+							<div class="sliders-holder" id="cost-assumptions-range">
+								<div class="slider-item" rel="a1" data-percent="false" data-max="100000">
+									<div class="d-md-flex justify-content-between align-items-center mb-2">
+										<div class="slider-title">
+											<p class="lead my-0">A/P Processor ( <span class="currency"></span> )</p>
+										</div>
+										<div class="slider-values">
+											<form class="form-inline text-right">
+												<div class="form-group w-100 mb-1">
+													<label for="a1i1" class="ml-auto mr-2">conservative</label> 
+													<input type="text" class="pips-input-box form-control slider-amount-c" id="a1i1" />
+												</div>
+												<div class="form-group w-100">
+													<label for="a1i2" class="ml-auto mr-2">likely</label> 
+													<input type="text" class="pips-input-box form-control slider-amount-l" id="a1i2" />
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="slider-holder">
+										<div class="slider" id="slider1"></div>
+									</div>
+								</div>
+		
+		
+								<div class="slider-item" rel="a2" data-percent="false" data-max="100000">
+									<div class="d-md-flex justify-content-between align-items-center mb-2">
+										<div class="slider-title">
+											<p class="lead my-0">Data Entry Person ( <span class="currency"></span> )</p>
+										</div>
+										<div class="slider-values">
+											<form class="form-inline text-right">
+												<div class="form-group w-100 mb-1">
+													<label for="a2i1" class="ml-auto mr-2">conservative</label> <input
+														type="text" class="pips-input-box form-control slider-amount-c" id="a2i1" />
+												</div>
+												<div class="form-group w-100">
+													<label for="a2i2" class="ml-auto mr-2">likely</label> <input
+														type="text" class="pips-input-box form-control slider-amount-l" id="a2i2" />
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="slider-holder">
+										<div class="slider" id="slider2"></div>
+									</div>
+								</div>
+		
+		
+								<div class="slider-item" rel="a3" data-percent="false" data-max="100000">
+									<div class="d-md-flex justify-content-between align-items-center mb-2">
+										<div class="slider-title">
+											<p class="lead my-0">Purchasing Specialist ( <span class="currency"></span> )</p>
+										</div>
+										<div class="slider-values">
+											<form class="form-inline text-right">
+												<div class="form-group w-100 mb-1">
+													<label for="a3i1" class="ml-auto mr-2">conservative</label> <input
+														type="text" class="pips-input-box form-control slider-amount-c" id="a3i1" />
+												</div>
+												<div class="form-group w-100">
+													<label for="a3i2" class="ml-auto mr-2">likely</label> <input
+														type="text" class="pips-input-box form-control slider-amount-l" id="a3i2" />
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="slider-holder">
+										<div class="slider" id="slider3"></div>
+									</div>
+								</div>
+		
+		
+								<div class="slider-item" rel="a4" data-percent="false" data-max="100000">
+									<div class="d-md-flex justify-content-between align-items-center mb-2">
+										<div class="slider-title">
+											<p class="lead my-0">Receiving Specialist (  <span class="currency"></span> )</p>
+										</div>
+										<div class="slider-values">
+											<form class="form-inline text-right">
+												<div class="form-group w-100 mb-1">
+													<label for="a4i1" class="ml-auto mr-2">conservative</label> <input
+														type="text" class="pips-input-box form-control slider-amount-c" id="a4i1" />
+												</div>
+												<div class="form-group w-100">
+													<label for="a4i2" class="ml-auto mr-2">likely</label> <input
+														type="text" class="pips-input-box form-control slider-amount-l" id="a4i2" />
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="slider-holder">
+										<div class="slider" id="slider4"></div>
+									</div>
+								</div>
+		
+		
+								<div class="slider-item" rel="a5" data-percent="false" data-max="100000">
+									<div class="d-md-flex justify-content-between align-items-center mb-2">
+										<div class="slider-title">
+											<p class="lead my-0">Non-PO Approver ( <span class="currency"></span> )</p>
+										</div>
+										<div class="slider-values">
+											<form class="form-inline text-right">
+												<div class="form-group w-100 mb-1">
+													<label for="a5i1" class="ml-auto mr-2">conservative</label> <input
+														type="text" class="pips-input-box form-control slider-amount-c" id="a5i1" />
+												</div>
+												<div class="form-group w-100">
+													<label for="a5i2" class="ml-auto mr-2">likely</label> <input
+														type="text" class="pips-input-box form-control slider-amount-l" id="a5i2" />
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="slider-holder">
+										<div class="slider" id="slider5"></div>
+									</div>
+								</div>
+		
+							</div>
+		      </div> <!-- tab cost -->
+	        <div class="tab-pane fade" id="improvement-assumptions" role="tabpanel" aria-labelledby="improvement-assumptions-tab">
+	
+						<div class="sliders-holder" id="improvement-assumptions-range">
+							<div class="slider-item" rel="a6" data-percent="true" data-max="100">
+								<div
+									class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Data Entry</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a6i1" class="ml-auto mr-2">conservative</label> 
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a6i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a6i2" class="ml-auto mr-2">likely</label> 
+												<input type="text" class="pips-input-box form-control slider-amount-l" id="a6i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider6"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a7" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Accounts Payable (A/P)</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a7i1" class="ml-auto mr-2">conservative</label> <input
+													type="text" class="pips-input-box form-control slider-amount-c" id="a7i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a7i2" class="ml-auto mr-2">likely</label> <input
+													type="text" class="pips-input-box form-control slider-amount-l" id="a7i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider7"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a8" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Purchasing Resolution</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a8i1" class="ml-auto mr-2">conservative</label> <input
+													type="text" class="pips-input-box form-control slider-amount-c" id="a8i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a8i2" class="ml-auto mr-2">likely</label> <input
+													type="text" class="pips-input-box form-control slider-amount-l" id="a8i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider8"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a9" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Receiving Resolution</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a9i1" class="ml-auto mr-2">conservative</label> <input
+													type="text" class="pips-input-box form-control slider-amount-c" id="a9i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a9i2" class="ml-auto mr-2">likely</label> <input
+													type="text" class="pips-input-box form-control slider-amount-l" id="a9i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider9"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a10" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Non-PO Approval</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a10i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a10i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a10i2" class="ml-auto mr-2">likely</label> 
+												<input type="text" class="pips-input-box form-control slider-amount-l" id="a10i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider10"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a11" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Missed Discounts</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a11i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a11i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a11i2" class="ml-auto mr-2">likely</label> <input
+													type="text" class="pips-input-box form-control slider-amount-l" id="a11i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider11"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a12" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Available Discounts</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a12i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a12i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a12i2" class="ml-auto mr-2">likely</label> <input type="text" class="pips-input-box form-control slider-amount-l" id="a12i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider12"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a13" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Duplicate Invoices</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a13i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a13i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a13i2" class="ml-auto mr-2">likely</label> <input type="text" class="pips-input-box form-control slider-amount-l" id="a13i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider13"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a14" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Duplicate Payments</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a14i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a14i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a14i2" class="ml-auto mr-2">likely</label> <input type="text" class="pips-input-box form-control slider-amount-l" id="a14i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider14"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a15" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">A/P Fraud</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a15i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a15i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a15i2" class="ml-auto mr-2">likely</label> <input type="text" class="pips-input-box form-control slider-amount-l" id="a15i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider15"></div>
+								</div>
+							</div>
+	
+	
+							<div class="slider-item" rel="a16" data-percent="true" data-max="100">
+								<div class="d-md-flex justify-content-between align-items-center mb-2">
+									<div class="slider-title">
+										<p class="lead my-0">Audit Requests</p>
+									</div>
+									<div class="slider-values">
+										<form class="form-inline text-right">
+											<div class="form-group w-100 mb-1">
+												<label for="a16i1" class="ml-auto mr-2">conservative</label>
+												<input type="text" class="pips-input-box form-control slider-amount-c" id="a16i1" />
+											</div>
+											<div class="form-group w-100">
+												<label for="a16i2" class="ml-auto mr-2">likely</label> <input type="text" class="pips-input-box form-control slider-amount-l" id="a16i2" />
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="slider-holder">
+									<div class="slider" id="slider16"></div>
+								</div>
+							</div>
+	
+	
+						</div>
+					</div> <!-- tab improvement -->
+        </div>
+					<div class="button-interactions">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<div class="spaced py-2"></div>
+								<button class="btn btn-primary btn-md"
+									id="content-assume-button" data-dismiss="modal">Finished</button>
+							</div>
+						</div>
+						<div class="spaced py-2"></div>
+						<div class="spaced py-2"></div>
+						<div class="spaced py-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="terms-of-use" tabindex="-1" role="dialog"
+		aria-labelledby="terms-of-use-label" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div id="close-modal" data-dismiss="modal">
+						<span>close</span>
+						<div class="close-holder">x</div>
+					</div>
+					<h2 class="mt-0 mb-2">Terms of Use</h2>
+					<ol class="pl-3">
+						<li class="mb-3">The SAP® Invoice Management by OpenText
+							(“Value Calculator”) is a tool provided by SAP SE (“SAP”) to be
+							used only in order to produce indicative value calculations as
+							part of an assessment of the business value potential of SAP®
+							Invoice Management by OpenText.</li>
+
+						<li class="mb-3">The Value Calculator represents intellectual
+							property of SAP and may not be copied, translated, transferred,
+							or distributed without prior written consent of SAP.</li>
+
+						<li class="mb-3">The Value Calculator is provided for
+							informational purposes only and any results or other information
+							provided by or the value calculator do not constitute (and should
+							not be taken) as an investment or other professional advice and
+							should not be relied upon. Use of the Value Calculator is at the
+							users own risk, and the user is solely responsible for any
+							decision taken based on the results produced by the value
+							calculator.</li>
+
+						<li class="mb-3">SAP provides the Value Calculator and/or any
+							results produced by it as is without warranty of any kind,
+							whether expressed or implied, which I expressly excluded to the
+							extent permitted by applicable law. As the results produced by
+							the value calculator depend on the data provided and/or entered
+							by the respective user, SAP does not warrant that such results
+							are accurate or may be used or suitable for any specific
+							purposes.</li>
+
+						<li class="mb-3">SAP provides for the Value Calculator and/or
+							any results produced by it, to you without any warranties or
+							guarantees, whether, expressed or implied, which are expressly
+							excluded to the extent permitted by law.</li>
+
+						<li>The user of the Value Calculator assumes all risks
+							associated with its use of the Value Calculator, including
+							without limitation risk relating to the quality, performance,
+							data loss, and utility in a production environment. As the
+							results produced by the value calculator depend on data provided
+							and/or entered by the respective user, SAP does not warrant that
+							such results are accurate or may be used or suitable for any
+							specific purpose. In no event shall SAP be liable to a user of
+							the value calculator or to any third party for any damages,
+							arising in connection with a use is permitted use of or a users
+							inability to use the value calculator, or as a result of a defect
+							of the value calculator. This disclaimer of liability shall apply
+							regardless of the form of action that may be brought against SAP,
+							whether for contract or tort, including without limitation any
+							action for negligence. This limitation of liability shall not
+							apply in cases of wilful misconduct by SAP.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Modals -->
+
+
+	<!-- BGN Static Files -->
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+
+	<!-- Other & Custom -->
+	<script type="text/javascript" src="script/custom/matchHeight.js"></script>
+	<script type="text/javascript" src="script/custom/sliderPips.js"></script>
+	<script type="text/javascript" src="script/defaults/defaults.js"></script>
+	<script type="text/javascript" src="script/asset_information.js"></script>
+	<script type="text/javascript" src="script/Blob.js"></script>
+	<script type="text/javascript" src="script/Chart.min.js"></script>
+	<script type="text/javascript" src="script/FileSaver.js"></script>
+	<script type="text/javascript" src="script/moment.min.js"></script>
+
+
+	<!-- BGN Project Scripts -->
+	<script type="text/javascript">
+		$ = jQuery;
+
+    $(document).ready(function(){
+        /* Content Input/Assumptions */
+        $( "#content-input-button" ).click(function() {
+          $( this ).closest( ".assume-input" ).toggleClass( "content-actioned" );
+        });
+        $( "#content-assume-button" ).click(function() {
+          $( this ).closest( ".assume-input" ).toggleClass( "content-actioned" );
+        });
+
+        /* Height Match */
+        $(function() {
+          $('.inner-match-height').matchHeight({
+            byRow: true
+          });
+          $('.match-height').matchHeight({
+            byRow: false
+          });
+        });
+
+        /* Navi Elastic */
+        var $naviOverlay = $('#navigation-background #navigation-background-overlay');
+        $(window).scroll(function() {
+          var $theHeader = $('#site-navigation-holder, #navigation-background'),
+              StartHeight = '70',
+              scrollT = $(this).scrollTop(),
+              scrollH = this.scrollHeight;
+
+          $theHeader.height( StartHeight - scrollT );
+        });
+		
+
+        /* Tab Opening */
+        $( "#tab-opening" ).show();
+        $('#agree-checkbox').click(function(){
+          if($(this).is(":checked")){
+            $( "#agree-button" ).removeAttr('disabled');
+          } else {
+            $( "#agree-button" ).attr('disabled','disabled');
+          }
+        });
+        $( "#agree-button" ).attr('disabled','disabled').click(function() {
+          $( "#navi-tabs-holder" ).removeClass( "no-action" );
+          $( "#tab-nav-1, #tab-1" ).addClass( "active" );
+          $( "#tab-opening" ).addClass( "actioned" );
+          $('.tab-content-item-container, .tab-1').show();
+          $('.nav-next-button').removeAttr('disabled');
+          $('.nav-prev-button').attr('disabled','disabled');
+          $('html, body').animate({ scrollTop: 0 }, 'fast');
+        });
+
+				/* Tabs */
+				var active_tab = 'tab-1';
+				$('#navi-tabs .tab-nav-item').click(function() {
+						active_tab = $(this).attr('data-tab');
+
+						$('#navi-tabs .tab-nav-item').removeClass('active');
+						$('#tab-content .tab-content-item').removeClass('active');
+
+						$(this).addClass('active');
+						$("#" + active_tab).addClass('active');
+						$('.tab-data-table').hide();
+						$("." + active_tab).show();
+						if (active_tab == 'tab-5') {
+							$('.nav-next-button').attr('disabled','disabled');
+							$('#data-column').hide();
+              $('#results-column').removeClass('col-md-6').addClass('results-display');
+							$('.tab-content-item-container').addClass('white-column');
+						} else {
+							$('#data-column').show();
+							$('#results-column').addClass('col-md-6');
+							$('.nav-next-button').removeAttr('disabled');
+							$('#results-column').addClass('col-md-6').removeClass('results-display');
+							$('.tab-content-item-container').removeClass('white-column');
+						}
+						if (active_tab == 'tab-1') {
+							$('.nav-prev-button').attr('disabled','disabled');
+						} else {
+							$('.nav-prev-button').removeAttr('disabled');
+						}
+					});
+				/* Tab Next */
+				$('.nav-next-button').click(function() {
+							active_tab = $('.tab-nav-item[data-tab='+ active_tab+ ']').prev().attr('data-tab');
+
+							$('#navi-tabs .tab-nav-item').removeClass('active');
+							$('#tab-content .tab-content-item').removeClass('active');
+
+							$('.tab-nav-item[data-tab='+active_tab+ ']').addClass('active');
+							$("#" + active_tab).addClass('active');
+							$('.tab-data-table').hide();
+							$("." + active_tab).show();
+							$('.nav-prev-button').removeAttr('disabled');
+							if (active_tab == 'tab-5') {
+								$('.nav-next-button').attr('disabled','disabled');
+								$('#data-column').hide();
+								$('#results-column').removeClass('col-md-6').addClass('results-display');
+								$('.tab-content-item-container').addClass('white-column');
+							} else {
+								$('#data-column').show();
+								$('#results-column').addClass('col-md-6');
+								$('.nav-next-button').removeAttr('disabled');
+								$('#results-column').addClass('col-md-6').removeClass('results-display');
+								$('.tab-content-item-container').removeClass('white-column');
+							}
+						});
+				
+				/* Tab Prev */
+				$('.nav-prev-button').click(function() {
+							active_tab = $('.tab-nav-item[data-tab='+ active_tab + ']').next().attr('data-tab');
+
+							$('#navi-tabs .tab-nav-item').removeClass('active');
+							$('#tab-content .tab-content-item').removeClass('active');
+
+							$('.tab-nav-item[data-tab='+ active_tab + ']').addClass('active');
+							$("#" + active_tab).addClass('active');
+							$('.tab-data-table').hide();
+							$("." + active_tab).show();
+							$('.nav-next-button').removeAttr('disabled');
+
+							if (active_tab == 'tab-1') {
+								$('.nav-prev-button').attr('disabled', 'disabled');
+							}
+						});
+
+				/* Tooltips */
+				$(".pop-act").click(function() {
+					$(this).toggleClass("actioned");
+				});
+
+				$('[data-toggle="tooltip"]').tooltip({'html' : true});
+			});
+	</script>
+
+
+</body>
+</html>
+
